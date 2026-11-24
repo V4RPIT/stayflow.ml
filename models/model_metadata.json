@@ -1,0 +1,96 @@
+{
+    "model_name": "logistic_regression",
+    "trained_at": "2026-11-24T20:43:35.053553",
+    "cv_roc_auc_score": 0.8484477130647381,
+    "best_hyperparameters": {
+        "classifier__C": 10.0,
+        "classifier__class_weight": null,
+        "classifier__max_iter": 1000,
+        "classifier__penalty": "l2",
+        "classifier__solver": "lbfgs"
+    },
+    "test_metrics": {
+        "roc_auc": 0.8453744607197292,
+        "pr_auc": 0.6551705199186919,
+        "accuracy": 0.8048261178140526,
+        "balanced_accuracy": 0.7177336020047018,
+        "precision": 0.6655518394648829,
+        "recall": 0.5320855614973262,
+        "f1_score": 0.5913818722139673,
+        "brier_score": 0.13590714990915678
+    },
+    "business_impact": {
+        "default_threshold": {
+            "threshold": 0.5,
+            "tp": 199,
+            "fp": 100,
+            "fn": 175,
+            "tn": 935,
+            "customers_targeted": 299,
+            "campaign_cost": 14950.0,
+            "customers_saved": 99.5,
+            "gross_value_saved": 49750.0,
+            "net_value_added": 34800.0,
+            "roi_percent": 232.77591973244145,
+            "churn_capture_rate": 0.5320855614973262
+        },
+        "optimal_threshold": {
+            "threshold": 0.15999999999999998,
+            "tp": 339,
+            "fp": 409,
+            "fn": 35,
+            "tn": 626,
+            "customers_targeted": 748,
+            "campaign_cost": 37400.0,
+            "customers_saved": 169.5,
+            "gross_value_saved": 84750.0,
+            "net_value_added": 47350.0,
+            "roi_percent": 126.60427807486631,
+            "churn_capture_rate": 0.9064171122994652
+        }
+    },
+    "all_models_summary": [
+        {
+            "Model": "gradient_boosting",
+            "ROC-AUC": 0.8474,
+            "PR-AUC": 0.668,
+            "Accuracy": 0.807,
+            "Balanced Acc": 0.7132,
+            "Precision": 0.6809,
+            "Recall": 0.5134,
+            "F1-Score": 0.5854,
+            "Net Benefit ($) [Thresh=0.5]": 33900.0,
+            "Campaign ROI (%)": 240.4,
+            "Optimal Thresh": 0.24,
+            "Max Net Benefit ($)": 46750.0
+        },
+        {
+            "Model": "logistic_regression",
+            "ROC-AUC": 0.8454,
+            "PR-AUC": 0.6552,
+            "Accuracy": 0.8048,
+            "Balanced Acc": 0.7177,
+            "Precision": 0.6656,
+            "Recall": 0.5321,
+            "F1-Score": 0.5914,
+            "Net Benefit ($) [Thresh=0.5]": 34800.0,
+            "Campaign ROI (%)": 232.8,
+            "Optimal Thresh": 0.16,
+            "Max Net Benefit ($)": 47350.0
+        },
+        {
+            "Model": "random_forest",
+            "ROC-AUC": 0.8443,
+            "PR-AUC": 0.6556,
+            "Accuracy": 0.7402,
+            "Balanced Acc": 0.7609,
+            "Precision": 0.5067,
+            "Recall": 0.8048,
+            "F1-Score": 0.6219,
+            "Net Benefit ($) [Thresh=0.5]": 45550.0,
+            "Campaign ROI (%)": 153.4,
+            "Optimal Thresh": 0.43,
+            "Max Net Benefit ($)": 46200.0
+        }
+    ]
+}

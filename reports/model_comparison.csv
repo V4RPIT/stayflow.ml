@@ -1,0 +1,4 @@
+Model,ROC-AUC,PR-AUC,Accuracy,Balanced Acc,Precision,Recall,F1-Score,Net Benefit ($) [Thresh=0.5],Campaign ROI (%),Optimal Thresh,Max Net Benefit ($)
+gradient_boosting,0.8474,0.668,0.807,0.7132,0.6809,0.5134,0.5854,33900.0,240.4,0.24,46750.0
+logistic_regression,0.8454,0.6552,0.8048,0.7177,0.6656,0.5321,0.5914,34800.0,232.8,0.16,47350.0
+random_forest,0.8443,0.6556,0.7402,0.7609,0.5067,0.8048,0.6219,45550.0,153.4,0.43,46200.0
